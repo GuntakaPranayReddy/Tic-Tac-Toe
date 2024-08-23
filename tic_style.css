@@ -1,0 +1,84 @@
+*{
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+.turn-container{
+    width: 170px;
+    height: 80px; 
+    margin: auto;
+    /* 
+    In web development, the CSS property "margin: auto" is used to horizontally center an element within its parent container. When margin: auto is set, the browser automatically calculates the margins and evenly distributes the remaining space on the left and right sides of the element. This means that the element will take up its specified width, and the remaining space will be split equally between the left and right margins
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+.turn-container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turn-container .turn-box{
+    font-weight: bolder;
+    font-size: 1.6rem;
+    border: 0.5vh solid black;
+}
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg{
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    background-color: #ff2e63;
+    left:0;
+    bottom:0;
+    z-index:-1;
+}
+ .main-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height:40vh;
+    width:20vw;
+    margin: 5vh auto;
+    border: 1vh solid black;
+}
+.box{
+    border: 1vh solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: bolder;
+} 
+.box:hover{
+    cursor: pointer;
+    background-color: #ff2e63;
+}
+#play-again{
+    background-color: #ff2e63;
+    padding: 1.5vh 2vw;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1vh;
+    cursor: pointer;
+    display: none;
+}
+#play-again:hover{
+    background-color: #08d9d6;
+    padding: 1.5vh 2.5vw;
+    color:black;
+}
+
+
